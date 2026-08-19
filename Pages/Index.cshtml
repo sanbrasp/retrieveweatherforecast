@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "The Weather Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to the Weather Page</h1>
+    <table class="text-left" border="1" style="width:100%;" cellpadding="4">
+        <tr>
+            <th>Date</th>
+            <th>Temperature (C)</th>
+            <th>Temperature (F)</th>
+            <th>Summary</th>
+        </tr>
+        @Html.Raw(Model.myData)
+    </table>
+</div>
